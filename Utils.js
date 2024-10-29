@@ -213,6 +213,22 @@ class Utils{
         return typeof glue === 'undefined' ? values : values.join(glue);
     }
     /**
+     * nodeList内にelementを含むか判定
+     *
+     * @param {NodeList} nodeList
+     * @param {HTMLElement} element
+     * @returns {boolean}
+     */
+    isInclude(nodeList,element){
+        let result = false;
+        nodeList.forEach((elm,i)=>{
+            if(elm === element){
+                result = true;
+            }
+        });
+        return result;
+    }
+    /**
      * this.elements初期化
      *
      * @static

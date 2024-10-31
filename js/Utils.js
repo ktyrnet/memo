@@ -375,6 +375,20 @@ class Utils{
         return result;
     }
     /**
+     * チェックボックスの全チェック・全チェック外しを切り替える
+     * ボタン要素にdata-target='[name="import"]'のような形でチェックボックスを指し示しておき押下時に下記を実行する
+     *
+     * @param {*} e
+     */
+    toggleChecks(e){
+        const checkAll = document.querySelectorAll(e.target.dataset.target);
+        const checkedAll = document.querySelectorAll(e.target.dataset.target+':checked');
+        const allChecked = checkAll <= checkedAll.length;
+        checkAll.forEach((elm,i)=>{
+            elm.checked = !allChecked;
+        });
+    }
+    /**
      * 指定要素の指定イベント発火
      *
      * @static

@@ -1087,7 +1087,8 @@ class Validator{
 class AnimateManager{
     /**
      * Creates an instance of AnimateManager.
-     *
+     * https://easings.net/ja
+     * 
      * @constructor
      */
     constructor() {

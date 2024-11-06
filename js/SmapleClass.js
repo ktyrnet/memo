@@ -12,6 +12,10 @@ class SampleClass{
     get isSp(){
         return !this.isPc;
     }
+    /* setter */
+    set current(newValue){
+        /* this.datas.push(newValue); */
+    }
     /**
      * 初期化
      */

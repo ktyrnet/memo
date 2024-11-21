@@ -76,6 +76,6 @@ class MyClass{
     }
 }
 window.addEventListener('DOMContentLoaded',(e) => {
-    const sc = new SampleClass();
-    sc.init();
+    const mc = new MyClass();
+    mc.init();
 });

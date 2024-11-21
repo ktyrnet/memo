@@ -1,7 +1,7 @@
 /**
- * サンプル
+ * description
  */
-class SampleClass{
+class MyClass{
     constructor() {
     }
     /* getter */

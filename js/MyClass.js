@@ -29,7 +29,14 @@ class MyClass{
         };
         Utils.initDataElements(this);
     }
-    /* initDataElementsをクラスに内包する場合
+    /** initDataElementsをクラスに内包する場合 */
+    /**
+     * this.elements初期化
+     *
+     * @static
+     * @param {*} instance
+     * @param {*} target
+     */
     initDataElements(){
         this.elements.html = document.getElementsByTagName('html')[0];
         this.elements.body = document.getElementsByTagName('body')[0];
@@ -38,6 +45,14 @@ class MyClass{
             this.updateDataElements(this,key);
         }
     }
+    /**
+     * this.elements更新
+     *
+     * @static
+     * @param {*} instance
+     * @param {*} key
+     * @param {*} target
+     */
     updateDataElements(instance,key,target){
         if(!target)target = document;
         const keys = typeof key === 'string' ? [key] : key;
@@ -54,7 +69,6 @@ class MyClass{
             }
         });
     }
-    */
     executeApi(url,isJson,callback,errorCallback){
         fetch(url)
         .then((response)=>{

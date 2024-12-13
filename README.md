@@ -1,2 +1,2 @@
-# samples
+# originalcodes
 オリジナルのコードの型
